@@ -11,7 +11,7 @@ function SearchBar() {
     <div>
       <h1>SearchBar</h1>
       <form onSubmit={handleSubmit}>
-        <input type="text" placeholder="Search for jobs here" />
+        <input type="text" placeholder="Enter your job keyword here" />
         <button type="submit">Search</button>
       </form>
     </div>
