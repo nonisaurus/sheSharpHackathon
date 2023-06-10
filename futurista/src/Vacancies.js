@@ -11,7 +11,6 @@ class Vacancies extends Component {
       allJobs: [],
     };
   }
-
   apiCall = (value) => {
     const apiUrl = `sourcestack-api.com/jobs?${value}`;
     const secretKey = "SECRET_KEY";
