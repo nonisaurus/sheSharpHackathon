@@ -8,9 +8,13 @@ import Contact from "./Contact";
 function App() {
   return (
     <div>
-      <h1>Logo</h1>
       <Router>
-        <Navbar>
+        <Navbar bg="info" variant="dark">
+          <Container>
+            <Navbar.Brand>
+              <img src="/img/coffee-logo.jpg" />
+            </Navbar.Brand>
+          </Container>
           <Container>
             <Navbar.Brand>
               <Link to="/">About</Link>
