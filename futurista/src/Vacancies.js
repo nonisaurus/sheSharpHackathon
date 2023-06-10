@@ -1,6 +1,7 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import SearchBar from "./SearchBar";
 import Filter from "./Filter";
+
 
 class Vacancies extends Component{
     constructor(props){
@@ -12,25 +13,29 @@ class Vacancies extends Component{
 
     }
 
-    handleSearchBar = (e) => {
-      const userInput = e.target.value
-      this.setState({
-        searchBar: userInput
-      })
-    }
 
+  handleSearchBar = (e) => {
+    e.preventDefault();
+    const userInput = e.target.value;
+    this.setState({
+      searchBar: userInput,
+    });
+  };
 
 
     render(){
          return (
+
       <div>
         <h1>Vacancies</h1>
-        <SearchBar  handleSearchBar={this.props.handleSearchBar}
-                    searchBar={this.state.searchBar} />
+        <SearchBar
+          handleSearchBar={this.handleSearchBar}
+          searchBar={this.state.searchBar}
+        />
         <Filter />
       </div>
     );
-    }
   }
-  
-  export default Vacancies;
+}
+
+export default Vacancies;
