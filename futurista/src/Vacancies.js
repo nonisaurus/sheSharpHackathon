@@ -5,13 +5,24 @@ import Filter from "./Filter";
 class Vacancies extends Component{
     constructor(props){
         super(props)
+        this.state = {
+          searchBar: ''
+        }
+    }
+
+    handleSearchBar = (e) => {
+      const userInput = e.target.value
+      this.setState({
+        searchBar: userInput
+      })
     }
 
     render(){
          return (
       <div>
         <h1>Vacancies</h1>
-        <SearchBar />
+        <SearchBar  handleSearchBar={this.props.handleSearchBar}
+                    searchBar={this.state.searchBar} />
         <Filter />
       </div>
     );
