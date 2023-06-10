@@ -3,7 +3,6 @@ import axios from "axios";
 import Table from 'react-bootstrap/Table';
 
 import Apply from "./Apply";
-import SkipToNext from "./SkipToNext";
 // import jobsData from "./seed";
 
 
@@ -49,6 +48,14 @@ class Vacancies extends Component {
         console.log(error.response.headers);
       })}
   
+    handleSkipToNext = () => {
+      const { allJobs, indexNumber } = this.state;
+      const totalJobs = allJobs.length;
+      const nextIndex = (indexNumber + 1) % totalJobs;
+      this.setState({
+        indexNumber: nextIndex
+      });
+    }
       
 
 
@@ -91,7 +98,7 @@ class Vacancies extends Component {
           </tbody>
         </Table> 
         <Apply companyUrl={item.company_url} apiCall={this.ApiCall}/>
-        <SkipToNext apiCall={this.ApiCall}/>
+        <button onClick={this.handleSkipToNext}>Skip to Next</button>
       </>
     )
    
