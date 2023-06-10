@@ -3,7 +3,6 @@ import axios from "axios";
 import Table from 'react-bootstrap/Table';
 import Button from 'react-bootstrap/Button';
 
-
 import Apply from "./Apply";
 // import jobsData from "./seed";
 
