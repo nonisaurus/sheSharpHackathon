@@ -3,6 +3,7 @@ import SearchBar from "./SearchBar";
 import Filter from "./Filter";
 // import axios from "axios";
 
+
 class Vacancies extends Component {
   constructor(props) {
     super(props);
@@ -11,7 +12,6 @@ class Vacancies extends Component {
       allJobs: [],
     };
   }
-
   apiCall = (value) => {
     const apiUrl = `sourcestack-api.com/jobs?${value}`;
     const secretKey = "SECRET_KEY";
@@ -51,11 +51,14 @@ class Vacancies extends Component {
     });
   };
 
+
   render() {
     const displayAllJobs = this.state.allJobs.map((item, index) => {
       return <h1>Hi</h1>;
     });
     return (
+
+
       <div>
         <h1>Vacancies</h1>
         <SearchBar

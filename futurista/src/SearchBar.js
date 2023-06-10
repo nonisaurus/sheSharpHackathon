@@ -10,6 +10,7 @@ function SearchBar(props) {
   return (
     <div>
       <h1>SearchBar</h1>
+
       <form>
         <input
           type="text"
