@@ -10,8 +10,12 @@ function SearchBar(props) {
   return (
     <div>
       <h1>SearchBar</h1>
-      <form >
-        <input type="text" placeholder="Enter your job keyword here" onChange={props.handleSearchBar}/>
+      <form>
+        <input
+          type="text"
+          placeholder="Enter your job keyword here"
+          onChange={props.handleSearchBar}
+        />
         <button type="submit">Search</button>
       </form>
     </div>
