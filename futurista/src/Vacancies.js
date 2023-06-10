@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import axios from "axios";
 import Table from 'react-bootstrap/Table';
+import Button from 'react-bootstrap/Button';
+
 
 import Apply from "./Apply";
 // import jobsData from "./seed";
@@ -98,7 +100,7 @@ class Vacancies extends Component {
           </tbody>
         </Table> 
         <Apply companyUrl={item.company_url} apiCall={this.ApiCall}/>
-        <button onClick={this.handleSkipToNext}>Skip to Next</button>
+        <Button onClick={this.handleSkipToNext} variant="light">Skip to Next</Button>
       </>
     )
    

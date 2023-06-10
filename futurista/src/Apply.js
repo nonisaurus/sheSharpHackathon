@@ -1,9 +1,10 @@
 import React from "react";
+import Button from 'react-bootstrap/Button';
 
 function Apply(props) {
   return (
     <>
-      <button>Apply</button>
+      <Button variant="light">Apply</Button>
     </>
   );
 }
