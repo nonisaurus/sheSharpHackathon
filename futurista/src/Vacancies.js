@@ -8,6 +8,8 @@ class Vacancies extends Component{
         this.state = {
           searchBar: ''
         }
+
+
     }
 
     handleSearchBar = (e) => {
@@ -16,6 +18,8 @@ class Vacancies extends Component{
         searchBar: userInput
       })
     }
+
+
 
     render(){
          return (
