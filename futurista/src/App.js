@@ -1,6 +1,10 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import "./App.css";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
+import Nav from 'react-bootstrap/Nav';
+import Image from 'react-bootstrap/Image';
+
 import About from "./About";
 import Vacancies from "./Vacancies";
 import Contact from "./Contact";
@@ -9,22 +13,20 @@ function App() {
   return (
     <div>
       <Router>
-        <Navbar bg="info" variant="dark">
+        <Navbar variant="dark" className="navbar" >
           <Container>
             <Navbar.Brand>
-              <img src="/img/coffee-logo.jpg" />
+              <Image src="../public/f_logo.png" 
+              alt="" 
+              width="30"
+              height="30"
+              className="d-inline-block align-top"/>
             </Navbar.Brand>
           </Container>
           <Container>
-            <Navbar.Brand>
-              <Link to="/">About</Link>
-            </Navbar.Brand>
-            <Navbar.Brand>
-              <Link to="/vacancies">Vacancies</Link>
-            </Navbar.Brand>
-            <Navbar.Brand>
-              <Link to="/contact">Contact</Link>
-            </Navbar.Brand>
+            <Nav.Link as={Link} to="/">About</Nav.Link>
+            <Nav.Link as={Link} to="/vacancies">Vacancies</Nav.Link>
+            <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
           </Container>
         </Navbar>
 

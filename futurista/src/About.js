@@ -1,7 +1,7 @@
 function About() {
   return (
     <div>
-      <img scr="" alt="banner" />
+      <img scr="" alt="" />
       <h1>Welcome to the (SheSharp & Reaktor) Hackathon</h1>
       <h3>created by: Ana & Noni</h3>
       <p>
