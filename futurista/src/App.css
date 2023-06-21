@@ -1,11 +1,75 @@
+* {
+  letter-spacing: 1px;
+  font-family: "Roboto", sans-serif;
+}
+
 .App {
   text-align: center;
 }
 .navbar {
-  background-color: rgb(254, 211, 245);
+  background-color: rgb(254, 223, 247);
   color: rgb(0, 0, 0);
   margin: 1%;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   border-radius: 10px;
 }
 
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}  
+
+.job-btn {
+  font-size: 16px;
+  font-weight: 200;
+  padding: 13px 20px 13px;
+  margin: 1rem 2rem;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.job-btn:after {
+  content: "";
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.job-btn:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .job-btnn-52 {
+    padding: 13px 50px 13px;
+  }
+}
+
+.prev-btn:after{
+  background-color: #e4e2fd;
+}
+.apply-btn:after{
+  background-color: #e2fdec;
+}
+.skip-btn:after{
+  background-color: #fde2fb;
+}

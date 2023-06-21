@@ -13,11 +13,11 @@ function App() {
   return (
     <div>
       <Router>
-        <Navbar variant="dark" className="navbar" >
+        <Navbar variant="dark" className="navbar calistro-font" >
           <Container>
             <Navbar.Brand>
               <Image src="../public/f_logo.png" 
-              alt="" 
+              alt="logo" 
               width="30"
               height="30"
               className="d-inline-block align-top"/>
