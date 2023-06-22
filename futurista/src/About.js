@@ -1,10 +1,11 @@
 import Container from "react-bootstrap/Container";
+import "./App.css";
 
 function About() {
   return (
-    <Container>
-      <img scr="" alt="" />
-      <h1 className="flex-center">Welcome to the (SheSharp & Reaktor) Hackathon</h1>
+    <Container className="flex">
+      {/* <img scr="" alt="" /> */}
+        <h1 className="about-h1">Welcome to the (SheSharp & Reaktor) Hackathon</h1>
       <h4>created by: Ana & Noni</h4>
       <p>
         We were tasked to create a project of our choice with an API and job

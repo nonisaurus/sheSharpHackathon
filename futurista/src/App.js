@@ -3,7 +3,6 @@ import "./App.css";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from 'react-bootstrap/Nav';
-import Image from 'react-bootstrap/Image';
 
 import About from "./About";
 import Vacancies from "./Vacancies";
@@ -13,16 +12,7 @@ function App() {
   return (
     <div>
       <Router>
-        <Navbar variant="dark" className="navbar calistro-font" >
-          <Container>
-            <Navbar.Brand>
-              <Image src="../public/f_logo.png" 
-              alt="logo" 
-              width="30"
-              height="30"
-              className="d-inline-block align-top"/>
-            </Navbar.Brand>
-          </Container>
+        <Navbar className="navbar navbar-expand-sm" collapseOnSelect expand="lg" sticky="top" >
           <Container>
             <Nav.Link as={Link} to="/">About</Nav.Link>
             <Nav.Link as={Link} to="/vacancies">Vacancies</Nav.Link>
